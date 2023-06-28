@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --heading: 2.5rem;
+  --title: 1.5rem;
+  --sub-title: 1rem;
+  --normal: .9rem;
+}
+
+.heading{
+  font-size: var(--heading);
+}
+
+.title{
+  font-size: var(--title);
+}
+
+.sub-title{
+  font-size: var(--sub-title);
+}
+
+.normal{
+  font-size: var(--normal);
+}
+
 * {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 a {

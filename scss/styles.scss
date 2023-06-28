@@ -6,7 +6,6 @@
   font-family: 'Poppins';
 }
 
-
 nav{
   display: flex;
   align-items: center;
@@ -19,13 +18,54 @@ nav{
   ul{
     display: flex;
     gap: 2rem;
-    li{
-      
+  }
+}
+
+.header{
+  text-align: center;
+  h1{
+    font-weight: 500;
+  }
+  .breadcrumb{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    span{
+      color: var(--primary);
     }
   }
 }
 
 .container{
+  display: flex;
+  gap: 3rem;
+  .sidebar{
+    width: 250px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 2rem;
+    h1, h2{
+      font-weight: 500;
+    }
+
+    h1{
+      margin-bottom: 1.25rem;
+    }
+
+    .checkbox{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .5rem;
+
+      label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(0, 0, 0, .5);
+      }
+    }
+  }
+
   .box{
     width: 280px;
     background-color: var(--secondary);

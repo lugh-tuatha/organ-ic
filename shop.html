@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
+  <!--------------- navigation --------------->
   <nav>
     <img src="assets/logo.png" alt="brand logo">
-  
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="shop.html">Shop</a></li>
@@ -19,11 +22,57 @@
     </ul>
   </nav>
 
+  <div class="header">
+    <h1 class="heading">Shop</h1>
+    <div class="breadcrumb sub-title">
+      <p>Home ></p>
+      <span>Shop</span>
+    </div>
+  </div>
+
+
   <div class="container">
+    <!---------------- sidebar ---------------->
+    <div class="sidebar">
+      <h1 class="title">SELECT FILTERS</h1>
+
+      <h2 class="sub-title">Condition</h2>
+      <div class="checkbox">
+        <label>
+          <div class="normal">
+            <input type="checkbox"> New
+          </div> <span>(1)</span>
+        </label>
+
+        <label>
+          <div class="normal">
+            <input type="checkbox"> Old
+          </div> <span>(1)</span>
+        </label>
+      </div>
+
+      <h2 class="sub-title">Color</h2>
+      <div class="checkbox">
+        <label>
+          <div class="normal">
+            <input type="checkbox"> White
+          </div> <span>(1)</span>
+        </label>
+
+        <label>
+          <div class="normal">
+            <input type="checkbox"> Nigga
+          </div> <span>(1)</span>
+        </label>
+      </div>
+    </div>
+
+
+    <!----------- list of items ----------->
     <div class="box">
       <img src="assets/product/heart.jpg" alt="item">
       <div class="info">
-        <p>Heart</p>
+        <p>Human Heart</p>
         <p>$ 15,000</p>
       </div>
       <div class="btn">
@@ -33,7 +82,6 @@
     </div>
   </div>
 
-
-
 </body>
+
 </html>
