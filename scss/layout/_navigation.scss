@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0 .5rem 0;
+
+  img {
+    width: 10rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+}

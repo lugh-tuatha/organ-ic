@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--bg-color);
   padding: 0 10% 0 10%;
@@ -47,23 +52,9 @@ ul li {
   --bg-color: #daf6f1;
 }
 
-* {
-  margin: 0;
-  font-family: "Poppins";
-}
-
-nav {
+.container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0 0.5rem 0;
-}
-nav img {
-  width: 10rem;
-}
-nav ul {
-  display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .header {
@@ -81,64 +72,82 @@ nav ul {
   color: var(--primary);
 }
 
-.container {
-  display: flex;
-  gap: 3rem;
-}
-.container .sidebar {
-  width: 250px;
+.sidebar {
+  width: 20%;
   background-color: var(--secondary);
   border-radius: 5px;
   padding: 2rem;
 }
-.container .sidebar h1, .container .sidebar h2 {
+.sidebar h1,
+.sidebar h2 {
   font-weight: 500;
 }
-.container .sidebar h1 {
+.sidebar h1 {
   margin-bottom: 1.25rem;
 }
-.container .sidebar .checkbox {
+.sidebar .checkbox {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-.container .sidebar .checkbox label {
+.sidebar .checkbox label {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(0, 0, 0, 0.5);
 }
-.container .box {
-  width: 280px;
+
+.box {
   background-color: var(--secondary);
   padding: 10px;
   box-shadow: 0px 0px 10px gray;
   border-radius: 5px;
 }
-.container .box img {
+.box img {
   width: 100%;
 }
-.container .box .info {
+.box .info {
   display: flex;
   justify-content: space-between;
 }
-.container .box .info p {
+.box .info p {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.container .box .btn {
+.box .btn {
   display: flex;
   justify-content: space-between;
 }
-.container .box .btn button {
+.box .btn button {
   border: none;
   width: 40%;
   padding: 0.35rem 0 0.35rem 0;
 }
-.container .box .btn .buy-button {
+.box .btn .buy-button {
   background-color: var(--primary);
 }
-.container .box .btn .sell-button {
+.box .btn .sell-button {
   border: 2px solid var(--primary);
   background-color: transparent;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0 0.5rem 0;
+}
+nav img {
+  width: 10rem;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.shop-items {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,28 @@
+.sidebar {
+  width: 20%;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 2rem;
+
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(0, 0, 0, .5);
+    }
+  }
+}
